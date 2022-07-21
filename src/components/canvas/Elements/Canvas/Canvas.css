@@ -1,0 +1,26 @@
+.canvas-container {
+  position: relative;
+  width: calc(100vw - 380px);
+  height: calc(100vh - 38px);
+  overflow: auto;
+  resize: none;
+}
+
+canvas {
+  border: 1px solid;
+}
+
+/* webkit-scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #030303;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #d3d3d34d;
+}

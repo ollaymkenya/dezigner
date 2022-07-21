@@ -1,0 +1,5 @@
+<svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" aria-labelledby="arrowRightTopIconTitle" stroke="#E5E5E5" stroke-width="2px" stroke-linecap="square" fill="none" color="#ffffff" viewBox="12 12 36 36">
+    <path d="M47.5 32.5v-20h-20"/>
+    <path stroke-linecap="round" d="M47.5 12.5 45 15"/>
+    <path d="M45 15 12.5 47.5"/>
+</svg>

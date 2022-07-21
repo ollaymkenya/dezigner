@@ -1,38 +1,28 @@
 .App {
-  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: [col1-start] minmax(190px, 50vw) [col1-end col2-start]
+      auto,
+    [col2-end col3-start] minmax(190px, 50vw) [col3-end];
+  grid-template-rows: [row1-start] 38px [row1-end row2-start] auto [row2-end];
+  grid-template-areas:
+    'tools tools tools'
+    'items canvas editor'
+    'items canvas editor';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tools {
+  grid-area: tools;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-panel {
+  grid-area: items;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.canvas-container {
+  grid-area: canvas;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editors-panel {
+  grid-area: editor;
 }

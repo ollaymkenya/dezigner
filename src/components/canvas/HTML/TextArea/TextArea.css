@@ -1,0 +1,10 @@
+#fake-input,
+#fake-input textarea {
+  background-color: transparent;
+  font-family: Inter;
+  color: transparent;
+}
+
+#fake-input textarea {
+  caret-color: rgb(2, 27, 97);
+}

@@ -1,0 +1,113 @@
+.panel-layer__component-item,
+.panel-layer__component-parent,
+.layer-content,
+.layer-mode__tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li.panel-layer__component-item {
+  position: relative;
+  padding: 0 0 0 .5em;
+}
+
+.panel-layer__component {
+  width: 100%;
+}
+
+.panel-layer__component-parent {
+  padding: 2.5px 0;
+}
+
+.panel-layer__component-parent.child {
+  padding: 2.5px 0 2.5px .7em;
+}
+
+li.panel-layer__component-item:focus,
+li.panel-layer__component-item:focus-visible {
+  border: none;
+  outline: none;
+  background: rgba(0, 102, 204, 0.15);
+}
+
+li.panel-layer__component-item:hover{
+  background: rgba(0, 102, 204, 0.15);
+}
+
+.layer-mode__tools {
+  position: relative;
+}
+
+.layer-mode__tools div:first-child {
+  position: absolute;
+  top: -3px;
+  bottom: 2px;
+  right: 15px;
+  height: 100%;
+}
+
+.layer-mode__tools div:last-child {
+  position: absolute;
+  top: -3px;
+  bottom: 2px;
+  right: 0;
+  height: 100%;
+}
+
+.layer-content div,
+.layer-mode__tools div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  padding: 2.5px;
+}
+
+.layer-content,
+.layer-mode__tools div {
+  cursor: pointer;
+  user-select: none;
+}
+
+.layer-content .layer-title span {
+  position: relative;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  width: 112px;
+  overflow: hidden;
+}
+
+.layer-content .layer-title span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+li.panel-layer__component-item:hover .layer-content .layer-title span::after,
+li.panel-layer__component-item:focus .layer-content .layer-title span::after {
+  background-color: transparent;
+  background: transparent;
+}
+
+.layer-title input[type='text'] {
+  outline: none;
+  border: none;
+  width: 100%;
+  align-self: stretch;
+  font-size: inherit;
+  box-shadow: inset rgba(0, 102, 204, 1) 0 0 0 1px;
+  padding: 1px 1px;
+}

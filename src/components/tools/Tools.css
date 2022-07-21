@@ -1,0 +1,11 @@
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #373737;
+  color: #e5e5e5;
+}
+
+.tool-icons {
+  display: flex;
+}

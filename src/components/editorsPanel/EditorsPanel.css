@@ -1,0 +1,134 @@
+.editors-panel {
+  width: 190px;
+  height: calc(100vh - 38px);
+  min-width: 190px;
+  overflow: auto;
+  background-color: #ffffff;
+  border-left: 1px solid #e5e5e5;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.editors-panel__title {
+  display: block;
+  padding: 10px 5px;
+  color: #000000;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* dimensions */
+.editors-panel__container {
+  padding: 5px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.editors-panel__inner-container {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.editor-panel__container:last-child {
+  border-bottom: none;
+}
+
+.dimensions {
+  display: flex;
+  flex-direction: column;
+}
+
+.editors-panel__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editors-panel__row-item {
+  width: 100%;
+  margin: 5px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+}
+
+.editors-panel__row-start {
+  width: 100%;
+  padding: 5px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.editors-effect__type {
+  margin-left: 20px;
+}
+
+.editors-panel__row-item:focus-within {
+  border: 1px solid #0066cc;
+}
+
+.editors-panel__row-item:first-child {
+  margin: 0 5px 0 0;
+}
+
+.dimensions-values__item-label {
+  display: inline-block;
+  font-weight: 400;
+  color: #636363;
+}
+
+input,
+select,
+option {
+  width: 60px;
+  outline: none;
+  border: none;
+  font-size: inherit;
+  color: #323232;
+  font-weight: inherit;
+}
+
+input[type='number']:-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* text */
+.editors-panel__text {
+  border: none;
+  background-color: white;
+  width: 100%;
+}
+
+label.radio-input {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label.radio-input:hover {
+  background-color: #e5e5e5;
+}
+
+label.radio-input:focus-within {
+  background-color: #e5e5e5;
+}
+
+input[type='radio'] {
+  display: none;
+}

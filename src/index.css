@@ -1,13 +1,290 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* canvas font imports */
+/* archivo */
+@font-face {
+  font-family: 'ArchivoBlack';
+  src: local('Archivo-Black')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-Black.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoBlackItalic';
+  src: local('Archivo-BlackItalic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-BlackItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoBold';
+  src: local('Archivo-Bold')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-Bold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoBoldItalic';
+  src: local('Archivo-BoldItalic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-BoldItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoExtraBold';
+  src: local('Archivo-ExtraBold')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-ExtraBold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoExtraBoldItalic';
+  src: local('Archivo-ExtraBoldItalic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-ExtraBoldItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoExtraLight';
+  src: local('Archivo-ExtraLight')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-ExtraLight.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoExtraLightItalic';
+  src: local('Archivo-ExtraLightItalic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-ExtraLightItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoItalic';
+  src: local('Archivo-Italic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-Italic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoLight';
+  src: local('Archivo-Light')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-Light.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoLightItalic';
+  src: local('Archivo-LightItalic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-LightItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoMedium';
+  src: local('Archivo-Medium')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-Medium.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoMediumItalic';
+  src: local('Archivo-MediumItalic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-MediumItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoRegular';
+  src: local('Archivo-Regular')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-Regular.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoSemiBold';
+  src: local('Archivo-SemiBold')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-SemiBold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoSemiBoldItalic';
+  src: local('Archivo-SemiBoldItalic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-SemiBoldItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoThin';
+  src: local('Archivo-Thin')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-Thin.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArchivoThinItalic';
+  src: local('Archivo-ThinItalic')
+    , url('./assets/fonts/Archivo/static/Archivo/Archivo-ThinItalic.ttf')
+    format('truetype');
+}
+/* bebas neue */
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: local('BebasNeue-Regular')
+    , url('./assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+/* cormorant garamond */
+@font-face {
+  font-family: 'CormorantGaramondBold';
+  src: local('CormorantGaramond-Bold')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondBoldItalic';
+  src: local('CormorantGaramond-BoldItalic')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondItalic';
+  src: local('CormorantGaramond-Italic')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-Italic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondLight';
+  src: local('CormorantGaramond-Light')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondLightItalic';
+  src: local('CormorantGaramond-LightItalic')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondMedium';
+  src: local('CormorantGaramond-Medium')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondMediumItalic';
+  src: local('CormorantGaramond-MediumItalic')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondRegular';
+  src: local('CormorantGaramond-Regular')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondSemiBold';
+  src: local('CormorantGaramond-SemiBold')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'CormorantGaramondSemiBoldItalic';
+  src: local('CormorantGaramond-SemiBoldItalic')
+    , url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-SemiBoldItalic.ttf')
+    format('truetype');
+}
+/* ibm plex mono */
+@font-face {
+  font-family: 'IBMPlexMonoBold';
+  src: local('IBMPlexMono-Bold')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoBoldItalic';
+  src: local('IBMPlexMono-BoldItalic')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-BoldItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoExtraLight';
+  src: local('IBMPlexMono-ExtraLight')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-ExtraLight.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoExtraLight';
+  src: local('IBMPlexMono-ExtraLight')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-ExtraLight.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoItalic';
+  src: local('IBMPlexMono-Italic')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-Italic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoLight';
+  src: local('IBMPlexMono-Light')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoLightItalic';
+  src: local('IBMPlexMono-LightItalic')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-LightItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoMedium';
+  src: local('IBMPlexMono-Medium')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoMediumItalic';
+  src: local('IBMPlexMono-MediumItalic')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-MediumItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoRegular';
+  src: local('IBMPlexMono-Regular')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoSemiBold';
+  src: local('IBMPlexMono-SemiBold')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoSemiBoldItalic';
+  src: local('IBMPlexMono-SemiBoldItalic')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-SemiBoldItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoThin';
+  src: local('IBMPlexMono-Thin')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexMonoThinItalic';
+  src: local('IBMPlexMono-ThinItalic')
+    , url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-ThinItalic.ttf')
+    format('truetype');
+}
+
+/* Nanum pen script */
+@font-face {
+  font-family: 'NanumPenScriptRegular';
+  src: local('NanumPenScript-Regular')
+    , url('./assets/fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf')
+    format('truetype');
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }

@@ -1,0 +1,76 @@
+.tool-icon__parent {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.tool-icon__parent .tool-icon__image,
+.tool-icon__parent span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  padding: 10px 10px;
+}
+
+.tool-icon__parent span{
+  padding: 10px 0px;
+}
+
+.tool-icon__item:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.tool-icon__children {
+  display: none;
+  background-color: #373737;
+}
+
+.tool-icon__item:hover .tool-icon__children {
+  display: block;
+  z-index: 999;
+}
+
+.tool-icon__item {
+  position: relative;
+}
+
+input.image-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.tool-icon__child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 5px;
+  transition: all ease-in-out .125s;
+}
+
+.tool-icon__child:hover {
+  padding: 5px 5px;
+  background-color: #000000;
+  -webkit-box-shadow: 0px 5px 7px -7px #000000,
+    0px 0px 20px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 5px 7px -7px #000000, 0px 0px 20px 5px rgba(0, 0, 0, 0);
+}
+
+.tool-icon__child-name {
+  margin-left: 5px;
+}
+
+.tool-icon__child-item {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.tool-icon__item-shortcut {
+  margin-left: 40px;
+}
