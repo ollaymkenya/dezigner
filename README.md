@@ -1,18 +1,23 @@
-# Getting Started with Create React App
+# Dezigner App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was done as part of my campus final year project. It can draw different objects including rectangles, circles, text and lineswhich when brought together may for a website design, which was the main goal of this app
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `Interacting with the app`
+
+Runs the app in the build mode.\
+Open the [Dezigner app](https://ollaymkenya.github.io/dezigner/) to view it in the browser and interact with it.
+
+### `Download`
+
+For those who want to see and interact with the code, you have to download the source code from [Github](https://github.com/ollaymkenya/dezigner/) and once it opens you can open it with your favorite code editor, preferably, VS Code.
+
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run the app in your localhost, you have to download it as indicated above and upon completion open a terminal in the dezigner-main folder and run the command: npm start. It will launch the app in [http://localhost:3000/](http://localhost:3000/)
 
 ### `npm test`
 
