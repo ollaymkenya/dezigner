@@ -2,10 +2,6 @@
 
 This project was done as part of my campus final year project. It can draw different objects including rectangles, circles, text and lineswhich when brought together may for a website design, which was the main goal of this app
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ### `Interacting with the app`
 
 Runs the app in the build mode.\
@@ -14,6 +10,11 @@ Open the [Dezigner app](https://ollaymkenya.github.io/dezigner/) to view it in t
 ### `Download`
 
 For those who want to see and interact with the code, you have to download the source code from [Github](https://github.com/ollaymkenya/dezigner/) and once it opens you can open it with your favorite code editor, preferably, VS Code.
+
+## Available Scripts
+
+In the project directory, you can run:
+
 
 ### `npm start`
 
